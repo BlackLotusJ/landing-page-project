@@ -7,7 +7,7 @@ body{
     height:auto;
 }
 /*header*/
-.hero{    
+.hero{
   background-image: linear-gradient(to right,#0f2027,#203a43);
   color: white;
   height: 300px;
@@ -32,15 +32,18 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  align-content: flex-start;
 
 }
 
 .headerimage{
   margin: 30px;
-  margin-left: 200px;
+  margin-left: 400px;
+  position: sticky;
 }
 .hl{
     font-weight:24px;
+    font-family: "Comfortaa";
     color: #f9faf8;
     margin-right:850px;
     margin-bottom: 10px;
@@ -59,6 +62,7 @@ body{
     font-weight:lighter;
     font-size:12px;
     margin: 10px;
+    font-family: "Comfortaa";
 }
 .hl1{
     color: #f9faf8;
@@ -70,6 +74,9 @@ body{
     margin-top: 2px;
     margin: left 48px;
  }
+ .hl1:hover{
+   color: #e91e63;
+ }
 .hl2{
     color:#f9faf8;
     font-size: medium;
@@ -79,6 +86,9 @@ body{
     border:2px solid #e91e63;
     margin-top:2px;
     margin-left: 28px;
+}
+.hl2:hover{
+  color: #e91e63;
 }
 .hl3{
     color: #f9faf8;
@@ -90,7 +100,9 @@ body{
     margin-top: 2px;
     margin-left:28px;
 }
-
+.hl3:hover{
+  color: #e91e63;
+}
 /*background image*/
 .background-images{
   background-image: url(./images/redbull_lamborghini.jpg);
@@ -107,6 +119,7 @@ body{
     text-align: center;
     padding: 23px;
     font-weight: bold;
+    font-family:"Comfortaa";
 }
 /*image holder section*/
 .card-holder{
@@ -141,8 +154,8 @@ body{
 .quotetext{
   font-weight: lighter;
   font-size: 18px;
-  padding-left:150px;
-  padding-right:150px;
+  padding-left:100px;
+  padding-right:120px;
   margin:30px;
   font-style: italic;
 }
