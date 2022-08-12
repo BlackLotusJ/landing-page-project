@@ -1,75 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 body{
     background-color:white;
-    font-family:Roboto,sans-serif;
+    font-family:system-ui;
     margin: 0;
+    max-width: 100%;
+    height:auto;
+}
+/*header*/
+.hero{    
+  background-image: linear-gradient(to right,#0f2027,#203a43);
+  color: white;
+  height: 300px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content: flex-start;
+  padding: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0,0,0,0.2);
 }
 
-.header{
-    background-color: #1f2937;
-    color: white;
-    height: 150px;
+.header1{
+    margin-top:3px;
+    margin-bottom: 28px;
+    margin-left:48px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    align-content: flex-start;
-    margin-left: 20px;
 }
 
-footer{
-    font-family:Roboto,sans-serif;
-    background-color: #1f2937;
-    color: #e91e63;
-    text-align: center;
-    height: 100px;
+.header2{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
 
 }
-.image-holder{
-    display: flex;
-    flex:1 200px;
-}
-.img1{
-    border:2px solid #3882f6;
 
-}
-button{
-    background-color: #3882f6;
-    text-align:center;
-    border-radius: 23px;
-    border:white;
-    padding:11px;
-    color: white;
-
-
-}
-button:hover{
-    background-color: white;
-    color: #3882f6;
-    transition-duration: 0.4s;
-}
-button1{
-    border-radius: 8px;
-    padding: 11px;
-
-}
-img{
-    border-radius: 8px;
+.headerimage{
+  margin: 30px;
+  margin-left: 200px;
 }
 .hl{
     font-weight:24px;
     color: #f9faf8;
-    margin-right:700px;
-    margin-bottom: 20px;
+    margin-right:850px;
+    margin-bottom: 10px;
     margin: left 400px;
     font-size:larger;
 }
 .mh{
-    font-size:28px;
+    font-size:48px;
     font-weight:bold;
-    margin: 20px;
+    margin-bottom:24px;
+    margin-top:48px;
+    margin-left: 48px;
+    margin-right: 24px;
 }
 .mh .subtext{
     font-weight:lighter;
     font-size:12px;
+    margin: 10px;
 }
 .hl1{
     color: #f9faf8;
@@ -77,6 +66,7 @@ img{
     font-weight: 18px;
     padding: 8px;
     border: 2px solid #e91e63;
+    border-radius: 8px;
     margin-top: 2px;
     margin: left 48px;
  }
@@ -85,6 +75,7 @@ img{
     font-size: medium;
     font-weight: 18px;
     padding:8px;
+    border-radius: 8px;
     border:2px solid #e91e63;
     margin-top:2px;
     margin-left: 28px;
@@ -94,7 +85,126 @@ img{
     font-size:medium;
     font-weight: 18px;
     padding: 8px;
+    border-radius: 8px;
     border: 2px solid #e91e63;
     margin-top: 2px;
     margin-left:28px;
+}
+
+/*background image*/
+.background-images{
+  background-image: url(./images/redbull_lamborghini.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+}
+
+/*Some random text section*/
+.text1{
+    color: #1f2937;
+    align-content: center;
+    text-align: center;
+    padding: 23px;
+    font-weight: bold;
+}
+/*image holder section*/
+.card-holder{
+    display: flex;;
+    flex:1 50px;
+    align-items:center;
+    justify-content: space-around;
+    gap:12px;
+    margin:40px;
+    padding: 30px;
+    font-family: "Comfortaa";
+
+}
+.card{
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    text-align: center;
+    color: #0f2027;
+    font-weight: bold;
+}
+/*quote section*/
+.quote{
+  background-color: #e5e7eb;
+  margin-top:50px;
+  margin-bottom: 100px;
+  padding: 40px;
+  color: #1f2937;
+  font-family: "Comfortaa";
+  display: flex;
+}
+.quotetext{
+  font-weight: lighter;
+  font-size: 18px;
+  padding-left:150px;
+  padding-right:150px;
+  margin:30px;
+  font-style: italic;
+}
+.person{
+  font-weight: bolder;
+  align-self: flex-end;
+}
+/*Call to action section*/
+.div5{
+  margin:100px;
+  color: white;
+  background-color: #0f2027;
+  padding: 18px;
+  display:flex;
+  flex-flow:row;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0,0,0,0.2);
+  font-family: "Comfortaa";
+
+}
+.sub-div{
+  flex:5;
+}
+
+/*footer*/
+.footer{
+    font-family:"Comfortaa";
+    font-weight: normal;
+    background-image: linear-gradient(to right,#203a43,#0f2027);
+    color: #ffffff;
+    padding:20px;
+    margin-top:160px;
+    align-content: center;
+    text-align: center;
+}
+
+button{
+    background-color: #3882f6;
+    text-align:center;
+    font-weight:bold;
+    font-family: "Comfortaa";
+    border-radius: 12px;
+    padding:11px;
+    color: white;
+}
+
+button:hover{
+    background-color: #f50057;
+    border: #0f2027;
+    color: white;
+    transition-duration: 0.4s;
+}
+.button1{
+    border: 1px solid white;
+    padding: 14px;
+}
+.button2{
+  border:1px solid white;
+  flex:1;
+}
+img{
+    border:none;
+    max-width: 100%;
+    height: auto;
 }
